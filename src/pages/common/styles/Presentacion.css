@@ -1,0 +1,233 @@
+.cuerpo_general{
+    
+    background-color: transparent;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+.cuerpo_general_interno{
+    background-color: transparent;
+    width: 75%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpomediointernogen{
+    background-color: transparent;
+    width: 100%;
+    
+    position: relative;
+}
+.cuerpo_general_hijo{
+    background-color: transparent;
+}
+/*seleccionador palabras*/
+.palabra-es{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto_sele{
+    margin-left: 10px;
+}
+/*fin seleccionador palabras*/
+
+/*icono pegado iz*/
+
+/*fin icono pegado iz*/
+
+
+
+/*contenedor imagenes*/
+.images_con{
+    padding: 15px;
+    background-color: transparent;
+    
+}
+.contenedor_images_presentar{
+    background-color: transparent;
+    width:40%;
+    padding: 15px;
+    padding-top: 85px;
+    height: 500px;
+}
+.imagen__{
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo_images{
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.espacioyasabes{
+    background-color: transparent;
+
+}
+.titulo_imagen_nom{
+    font-size: 39pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*fin contenedor imagenes*/
+
+
+.button-container_presentar{
+    background-color: transparent;
+    grid: 50px;
+    height: 350px;
+    display:grid;
+    justify-content:right;
+    align-items: center;
+    width:18%;
+    
+}
+
+
+
+
+.padre__{
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    height: 500px;
+}
+
+
+
+
+
+/*parte video*/
+
+.video-container{
+    background-color: #E7D7C5;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 500px;
+    width: 80%;
+}
+
+.custom-video {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        height: 400px;
+        width: 95%; /* Adjust the width as needed */
+        background-color: white;
+}
+.video_con{
+    width: 90%;
+}
+
+.contendor_hijo_video_presentar{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.video-button_presentar{
+    width: 70px;
+    height: 70px;
+    background-color: #E7D7C5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.contendor_generalvideo_presentar{
+    background-color: transparent;
+    width: 55%;
+    height: 550px;
+
+    
+}
+/* Asegúrate de que los estilos se apliquen al contenedor correcto */
+/* Estilos generales para los íconos de video */
+.iconovideo_presentar {
+    width: 30px; /* Ajusta el tamaño si es necesario */
+    height: 30px; /* Ajusta el tamaño si es necesario */
+    fill: rgb(252, 252, 252); /* Color por defecto del ícono */
+  }
+  
+  .active-icon {
+    fill: #246D7D; /* Color cuando el ícono está activo (azul) */
+  }
+
+.imagen_servid{
+    width: 93%;
+    height: 92%;
+    
+}
+
+/*botones video*/
+
+.contenedorteclado{
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.logotecadoi_presentar{
+
+    color: white;
+    width: 50px;
+    padding: 3px;
+}
+.boton_ver{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.botonverm_presentar{
+    width: 100%;
+    background-color: #38AEC7;
+    
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 60px;
+}
+.iconowey{
+    color: white;
+}
+.iconoizqui{
+    width: 7%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imas{
+    background-color: transparent;
+    width: 100%;
+}

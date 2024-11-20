@@ -1,0 +1,176 @@
+.Padre_general{
+    background-color: transparent;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Padre_general_interno{
+    background-color: #E7D7C5;
+    width: 70%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.Padre_general_interno_ultimo{
+    background-color: white;
+    width: 97%;
+    height: 92%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Texto_General{
+    background-color: transparent;
+    
+}
+.Boton_General{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.boton_{
+    background-color: transparent;
+    width: 50%;
+    text-align: center;
+
+}
+
+.botonsi{
+    padding: 15px;
+    font-size: 19pt;
+    font-weight: 700;
+    color: white;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #00DD16;
+    background-color: #00DD16;
+}
+.letra__{
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 19pt;
+}
+.otro_p{
+    background-color: transparent;
+    width: 58%;
+    
+}
+
+.messageBox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 1000; /* Asegura que el mensaje esté encima de todo */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .ga {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .videopex{
+    
+    background-color: aqua;
+    width: 50%;
+    position: relative;
+  }
+
+
+  .camaraactiva{
+    background-color: transparent;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    z-index: 999999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .camarainter{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hijocamara{
+    background-color: transparent;
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .parte_camara{
+    background-color: white;
+    width: 96%;
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .camara{
+    background-color: transparent;
+    width: 60%;
+    height: 85%;
+    overflow: hidden;
+  }
+  .botones_fuera{
+    width: 98%;
+    height: 12%;
+    background-color: cadetblue;
+  }
+  .botonescamara{
+    background-color: #828883;
+    padding: 10px;
+    color:white;
+    font-size: 15pt;
+  }
+  .Parte_camara_general{
+    background-color: #E7D7C5;
+    width: 98%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .camaravideo{
+    width: 100%;
+    height: 100%;
+  }
+  .botonesfooterex{
+    background-color: rgb(96, 201, 231);
+    padding: 10px;
+  }

@@ -1,0 +1,57 @@
+.padre_padre{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Padre_hijo{
+    background-color: transparent;
+    
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.botongeneral{
+    width: 200px;
+    height: 200px;
+    background-color: #E7D7C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; 
+}
+.botogeneraldentro {
+    background-color: white;
+    width: 87%;
+    height: 87%;
+    border-radius: 12px;
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    border: none; 
+}
+.botogeneraldentro:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
+}
+
+.imagene{
+    width: 90%;
+    background-color: transparent;
+    z-index: 1;
+}
+.nombre-t{
+    background-color: transparent;
+    
+}
+.imagen_del_libro{
+    background-color: transparent;
+    margin-bottom: -35px;
+    z-index: 9999;
+}
+.nombretexto{
+    font-size: 15pt;
+    font-weight: bold;
+}

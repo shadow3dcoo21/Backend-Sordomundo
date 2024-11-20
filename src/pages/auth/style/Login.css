@@ -1,0 +1,27 @@
+
+.hijo{
+    width: 600px;
+}
+.svg-image{
+    width: 720px;
+}
+.input-l{
+    width: 80%;
+    
+    font-size: 25px;
+}
+.usuario-l{
+    height: 55px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.text-us{
+    font-size: 13pt;
+    color: #626060;
+}
+input::placeholder {
+    font-size: 20px; /* El tamaño que quieras */
+  }
+  .generalcolor{
+    color: #246D7D;
+  }
