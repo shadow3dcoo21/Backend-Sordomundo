@@ -44,6 +44,19 @@ function StudentLayout() {
         <li className="dropdown dropdown3">
           <NavLink to="/alumno/textos" activeClassName="active">Textos</NavLink>
         </li>
+        
+        <li className="dropdown dropdown2" activeClassName="active">
+          <span>Juego</span>
+          <ul className="dropdown-menu">
+            <li className="dropdownn">
+              <NavLink className='subtitulo' to="/alumno/juegos" activeClassName="active">Buscando</NavLink>
+            </li>
+            <li className="dropdownn">
+              <NavLink className='subtitulo' to="/alumno/completar" activeClassName="active dropdown2">Completar</NavLink>
+            </li>
+          </ul>
+        </li>
+
         <li className="dropdown dropdown3">
           <NavLink to="/alumno/diccionario" activeClassName="active">Diccionario</NavLink>
         </li>

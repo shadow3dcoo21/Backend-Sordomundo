@@ -17,7 +17,8 @@ export const AuthProvider = ({ children }) => {
 
   const login = async ({ username, password, loginType }) => {
     try {
-      const endpoint = `http://localhost:5000/api/auth/login/${loginType}`;
+      const endpoint = `https://sordomundo.pro/api/auth/login/${loginType}`;
+
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

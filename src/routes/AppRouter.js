@@ -14,6 +14,7 @@ import Presentacion from '../pages/common/Presentacion';
 import Completar from '../pages/common/Completar';
 import Textos from '../pages/common/Textos';
 import Diccionario from '../pages/common/Diccionario';
+import Juego from '../pages/common/Juegos';
 import Examen from '../pages/common/Examen';
 //import Juegos from '../pages/common/Juegos';
 
@@ -73,6 +74,7 @@ function AuthenticatedRoutes() {
         <Route path="/alumno/textos" element={<PrivateRoute role="alumno" element={<Textos />} />} />
         <Route path="/alumno/diccionario" element={<PrivateRoute role="alumno" element={<Diccionario />} />} />
         <Route path="/alumno/examen" element={<PrivateRoute role="alumno" element={<Examen />} />} />
+        <Route path="/alumno/juegos" element={<PrivateRoute role="alumno" element={<Juego />} />} />
 
         {/* Rutas para el Profesor */}
         <Route path="/profesor" element={<PrivateRoute role="profesor" element={<Dashboard />} />} />

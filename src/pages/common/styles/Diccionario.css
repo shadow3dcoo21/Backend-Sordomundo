@@ -403,3 +403,12 @@
     width: 50%;
     margin-top: 13px;
 }
+
+
+
+.asda{
+    width: 80%;
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center';
+}
