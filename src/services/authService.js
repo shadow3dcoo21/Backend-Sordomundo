@@ -18,22 +18,27 @@ export const AuthProvider = ({ children }) => {
   const login = async ({ username, password, loginType }) => {
     try {
       const endpoint = `https://sordomundo.pro/api/auth/login/${loginType}`;
-
+  
       const response = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include', // Añade esta línea
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
         body: JSON.stringify({ username, password }),
       });
-
+  
+      const data = await response.json(); // Siempre parsea la respuesta
+  
       if (response.ok) {
-        const data = await response.json();
         localStorage.setItem('authToken', data.token);
         localStorage.setItem('user', JSON.stringify({ username, role: loginType }));
         setIsAuthenticated(true);
         setUser({ username, role: loginType });
         return true;
       } else {
-        console.error('Error en la autenticación');
+        console.error('Error en la autenticación:', data.error);
         return false;
       }
     } catch (error) {
