@@ -35,7 +35,7 @@ const Presentacion = () => {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/content/presentar', {
+        const response = await fetch('https://sordomundo.pro/api/content/presentar', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado
@@ -180,7 +180,7 @@ const Presentacion = () => {
                  {/* <p>{`http://localhost:3000/${selectedPresentacion.imagen}`}</p>*/}
                   <div className='imagen__'>
                     {/*<img className='imagen_servid' src={`${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />*/}
-                    <img className='imagen_servid' src={`http://localhost:5000/${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
+                    <img className='imagen_servid' src={`https://sordomundo.pro/${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
                   </div>
                   <div className='titulo_images'>
                     <div className='espacioyasabes'>
@@ -235,7 +235,7 @@ const Presentacion = () => {
                     <img 
                       className='custom-video' 
                       key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 
-                      src={`http://localhost:5000/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
+                      src={`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
                       
                       alt={selectedPresentacion.titulos[selectedVideoIndex].titulo} 
                     />

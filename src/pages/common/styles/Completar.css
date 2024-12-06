@@ -355,12 +355,6 @@
 }
 
 
-.modal__{
-
-
-    
-    
-}
 .boton__modal{
     background-color: #38AEC7;
     height: 55px;
@@ -387,10 +381,6 @@
     overflow-y: scroll;
     
 }
-.informacion_alumno{
-    
-}
-
 
 /* Estilo del scrollbar en navegadores WebKit (Chrome, Safari) */
 .presentacion-container::-webkit-scrollbar {

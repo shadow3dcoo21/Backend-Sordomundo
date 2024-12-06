@@ -16,7 +16,7 @@ function HomeAlumno() {
       }
 
       try {
-        const response = await fetch('http://localhost:5000/api/users/profile', {
+        const response = await fetch('https://sordomundo.pro/api/users/profile', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado

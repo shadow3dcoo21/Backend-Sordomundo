@@ -75,7 +75,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
           }
   
           try {
-              const response = await fetch('http://localhost:5000/api/content/presentar', {
+              const response = await fetch('https://sordomundo.pro/api/content/presentar', {
                   method: 'GET',
                   headers: {
                       'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado
@@ -229,7 +229,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
               return;
             }
 
-            const response = await fetch('http://localhost:5000/api/content/registrardatoscomletar', {
+            const response = await fetch('https://sordomundo.pro/api/content/registrardatoscomletar', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -359,7 +359,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
         return;
       }
 
-      const response = await axios.get(`http://localhost:5000/api/content/completar/${nombre}/${tipo}`, {
+      const response = await axios.get(`https://sordomundo.pro/api/content/completar/${nombre}/${tipo}`, {
         headers: {
           'Authorization': `Bearer ${token}`,  // Incluir el token JWT en el encabezado
         },
@@ -420,8 +420,8 @@ const [gifSrc, setGifSrc] = useState('');
 // Actualiza la URL del GIF en función de `selectedPresentacion` y `selectedVideoIndex`
 useEffect(() => {
   if (selectedPresentacion && selectedPresentacion.titulos[selectedVideoIndex]) {
-    setlinkgift(`http://localhost:5000/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
-    setGifSrc(`http://localhost:5000/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
+    setlinkgift(`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
+    setGifSrc(`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
   }
 }, [selectedPresentacion, selectedVideoIndex]);
   //resetgif
