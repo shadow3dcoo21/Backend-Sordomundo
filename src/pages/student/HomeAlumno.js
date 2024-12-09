@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { USER_PROFILE_URL } from '../../services/apiJWTServices'; // Importar la variable de la URL
 function HomeAlumno() {
   const [userData, setUserData] = useState(null);  // Para almacenar los datos del usuario
   const [loading, setLoading] = useState(true);  // Para controlar el estado de carga
@@ -16,7 +16,7 @@ function HomeAlumno() {
       }
 
       try {
-        const response = await fetch('https://sordomundo.pro/api/users/profile', {
+        const response = await fetch(USER_PROFILE_URL, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado

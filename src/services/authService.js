@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async ({ username, password, loginType }) => {
     try {
-      const endpoint = `https://sordomundo.pro/api/auth/login/${loginType}`;
+      const endpoint = `http://localhost:5000/${loginType}`;
   
       const response = await fetch(endpoint, {
         method: 'POST',
@@ -46,6 +46,7 @@ export const AuthProvider = ({ children }) => {
       return false;
     }
   };
+
 
   const logout = () => {
     setIsAuthenticated(false);
