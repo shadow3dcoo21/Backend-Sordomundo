@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
+import { USER_LOGIN_URL } from './apiJWTServices';
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async ({ username, password, loginType }) => {
     try {
-      const endpoint = `http://localhost:5000/${loginType}`;
+      const endpoint = `${USER_LOGIN_URL}/${loginType}`;
   
       const response = await fetch(endpoint, {
         method: 'POST',

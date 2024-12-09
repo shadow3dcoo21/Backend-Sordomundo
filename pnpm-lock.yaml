@@ -32,6 +32,9 @@ importers:
       axios:
         specifier: ^1.7.7
         version: 1.7.9
+      eslint-config-react-app:
+        specifier: ^7.0.1
+        version: 7.0.1(@babel/plugin-syntax-flow@7.26.0(@babel/core@7.26.0))(@babel/plugin-transform-react-jsx@7.25.9(@babel/core@7.26.0))(eslint@8.57.1)(jest@27.5.1)(typescript@4.9.5)
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
