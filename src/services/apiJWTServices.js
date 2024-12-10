@@ -1,10 +1,10 @@
 // apiJWTServices.js
 
 // URL base del API 
-//const BASE_URL = 'https://sordomundo.pro/api';
-//const BASE_URLL = 'https://sordomundo.pro';
-const BASE_URLL = 'http://localhost:5000';
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://sordomundo.pro/api';
+const BASE_URLL = 'https://sordomundo.pro';
+//const BASE_URLL = 'http://localhost:5000';
+//const BASE_URL = 'http://localhost:5000/api';
 
 // Endpoints específicos
 
