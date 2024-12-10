@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef,useContext } from 'react';
+import { BASE_URL_GENERAL , USER_COMPLETAR_URL,USER_COMPLETAR_REGISTRAR_URL,USER_COMPLETAR_SECTION_URL} from '../../services/apiJWTServices';
 import './styles/Completar.css';
 import axios from 'axios';
 import { faFilm, faVideo, faPlayCircle, faTimes, faWindowMinimize } from '@fortawesome/free-solid-svg-icons';
@@ -75,7 +76,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
           }
   
           try {
-              const response = await fetch('https://sordomundo.pro/api/content/presentar', {
+              const response = await fetch(USER_COMPLETAR_URL, {
                   method: 'GET',
                   headers: {
                       'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado
@@ -229,7 +230,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
               return;
             }
 
-            const response = await fetch('https://sordomundo.pro/api/content/registrardatoscomletar', {
+            const response = await fetch(USER_COMPLETAR_REGISTRAR_URL, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -359,7 +360,7 @@ const [loading, setLoading] = useState(true);  // State to manage loading state
         return;
       }
 
-      const response = await axios.get(`https://sordomundo.pro/api/content/completar/${nombre}/${tipo}`, {
+      const response = await axios.get(`${USER_COMPLETAR_SECTION_URL}/${nombre}/${tipo}`, {
         headers: {
           'Authorization': `Bearer ${token}`,  // Incluir el token JWT en el encabezado
         },
@@ -420,8 +421,8 @@ const [gifSrc, setGifSrc] = useState('');
 // Actualiza la URL del GIF en función de `selectedPresentacion` y `selectedVideoIndex`
 useEffect(() => {
   if (selectedPresentacion && selectedPresentacion.titulos[selectedVideoIndex]) {
-    setlinkgift(`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
-    setGifSrc(`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
+    setlinkgift(`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
+    setGifSrc(`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
   }
 }, [selectedPresentacion, selectedVideoIndex]);
   //resetgif

@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import { BASE_URL_GENERAL , USER_COMPLETAR_URL,USER_COMPLETAR_REGISTRAR_URL,USER_COMPLETAR_SECTION_URL} from '../../services/apiJWTServices';
 import './styles/Diccionario.css';
 
 
@@ -25,7 +26,7 @@ const Diccionario = () => {
       }
 
       try {
-        const response = await fetch('https://sordomundo.pro/api/content/presentar', {
+        const response = await fetch(USER_COMPLETAR_URL, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado
@@ -331,7 +332,7 @@ const Diccionario = () => {
                     <img 
                       className='custom-video'
                       key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 
-                      src={`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
+                      src={`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
                       alt={selectedPresentacion.titulos[selectedVideoIndex].titulo} 
                     />
                   </div>

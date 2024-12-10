@@ -5,6 +5,8 @@ const AuthContext = createContext(null);
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
+  const [lastRoute, setLastRoute] = useState(null);
+
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
@@ -54,9 +56,15 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('authToken');
     localStorage.removeItem('user');
   };
+  
+  const saveLastRoute = (route) => {
+    setLastRoute(route);
+    // Opcional: Guardar en localStorage para persistencia
+    localStorage.setItem('lastRoute', route);
+  };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, user, login, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, user, login, logout ,lastRoute,saveLastRoute }}>
       {children}
     </AuthContext.Provider>
   );

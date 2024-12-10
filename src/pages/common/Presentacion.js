@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-
+import { BASE_URL_GENERAL , USER_PRESENTACION_URL} from '../../services/apiJWTServices';
 import { faFilm, faVideo, faPlayCircle, faTimes,faTextSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { NameContext } from './NameContext';
@@ -35,7 +35,7 @@ const Presentacion = () => {
       }
 
       try {
-        const response = await fetch('https://sordomundo.pro/api/content/presentar', {
+        const response = await fetch(USER_PRESENTACION_URL, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,  // Incluir el token en el encabezado
@@ -180,7 +180,7 @@ const Presentacion = () => {
                  {/* <p>{`http://localhost:3000/${selectedPresentacion.imagen}`}</p>*/}
                   <div className='imagen__'>
                     {/*<img className='imagen_servid' src={`${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />*/}
-                    <img className='imagen_servid' src={`https://sordomundo.pro/${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
+                    <img className='imagen_servid' src={`${BASE_URL_GENERAL}/${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
                   </div>
                   <div className='titulo_images'>
                     <div className='espacioyasabes'>
@@ -235,7 +235,7 @@ const Presentacion = () => {
                     <img 
                       className='custom-video' 
                       key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 
-                      src={`https://sordomundo.pro/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
+                      src={`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
                       
                       alt={selectedPresentacion.titulos[selectedVideoIndex].titulo} 
                     />
