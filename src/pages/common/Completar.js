@@ -421,8 +421,9 @@ const [gifSrc, setGifSrc] = useState('');
 // Actualiza la URL del GIF en función de `selectedPresentacion` y `selectedVideoIndex`
 useEffect(() => {
   if (selectedPresentacion && selectedPresentacion.titulos[selectedVideoIndex]) {
-    setlinkgift(`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
-    setGifSrc(`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`);
+    setlinkgift(selectedPresentacion.titulos[selectedVideoIndex].video);
+setGifSrc(selectedPresentacion.titulos[selectedVideoIndex].video);
+
   }
 }, [selectedPresentacion, selectedVideoIndex]);
   //resetgif
@@ -587,8 +588,8 @@ const resetGif = () => {
                     
                   <div className='contendor_vid-res'>
                       <div className='video_con'>
-                      
-                        {/*<h3>{selectedPresentacion.titulos[selectedVideoIndex].titulo}</h3>*/}
+                     
+                       
                         <img 
                           className='custom-video'
                           key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 

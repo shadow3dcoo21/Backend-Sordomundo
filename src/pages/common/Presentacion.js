@@ -177,10 +177,10 @@ const Presentacion = () => {
 
               <div className='contenedor_images_presentar'>
                 <div className='images_con'>
-                 {/* <p>{`http://localhost:3000/${selectedPresentacion.imagen}`}</p>*/}
+                 
                   <div className='imagen__'>
-                    {/*<img className='imagen_servid' src={`${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />*/}
-                    <img className='imagen_servid' src={`${BASE_URL_GENERAL}/${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
+                    
+                    <img className='imagen_servid' src={`${selectedPresentacion.imagen}`} alt={selectedPresentacion.nombre} />
                   </div>
                   <div className='titulo_images'>
                     <div className='espacioyasabes'>
@@ -230,12 +230,12 @@ const Presentacion = () => {
                   </div>
                   <div className='video-container'>
                   <div className='video_con'>
-                    {/* <h3>{`http://localhost:5000/${selectedPresentacion.titulos[selectedVideoIndex].video}`}</h3>*/}
+                   
                     
                     <img 
                       className='custom-video' 
                       key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 
-                      src={`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
+                      src={`${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
                       
                       alt={selectedPresentacion.titulos[selectedVideoIndex].titulo} 
                     />

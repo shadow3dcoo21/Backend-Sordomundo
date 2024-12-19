@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { BASE_URL_GENERAL , USER_COMPLETAR_URL,USER_COMPLETAR_REGISTRAR_URL,USER_COMPLETAR_SECTION_URL} from '../../services/apiJWTServices';
+import { BASE_URL_GENERAL , USER_COMPLETAR_URL} from '../../services/apiJWTServices';
 import './styles/Diccionario.css';
 
 
@@ -332,7 +332,7 @@ const Diccionario = () => {
                     <img 
                       className='custom-video'
                       key={`${selectedPresentacion.nombre}-${selectedVideoIndex}`} 
-                      src={`${BASE_URL_GENERAL}/${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
+                      src={`${selectedPresentacion.titulos[selectedVideoIndex].video}`} 
                       alt={selectedPresentacion.titulos[selectedVideoIndex].titulo} 
                     />
                   </div>
